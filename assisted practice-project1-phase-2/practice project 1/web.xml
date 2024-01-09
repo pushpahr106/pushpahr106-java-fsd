@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>PracticeProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>GetHandler</servlet-name>
+    <servlet-class>GetHandler</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PostHandler</servlet-name>
+    <servlet-class>PostHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetHandler</servlet-name>
+    <url-pattern>/gethandler</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostHandler</servlet-name>
+    <url-pattern>/posthandler</url-pattern>
+  </servlet-mapping>
+  <servlet>
+        <servlet-name>MyGenericServlet</servlet-name>
+        <servlet-class>MyGenericServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyGenericServlet</servlet-name>
+        <url-pattern>/mygeneric</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>MyServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/myservlet</url-pattern>
+    </servlet-mapping>
+    <filter>
+    <filter-name>loginFilter</filter-name>
+    <filter-class>LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>loginFilter</filter-name>
+    <url-pattern>/dashboard</url-pattern>
+    <url-pattern>/profile</url-pattern>
+  </filter-mapping>
+  
+  
+  <servlet>
+    <servlet-name>AccountDashboard</servlet-name>
+    <servlet-class>AccountDashboard</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AccountProfile</servlet-name>
+    <servlet-class>AccountProfile</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InfoPage</servlet-name>
+    <servlet-class>InfoPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AccountDashboard</servlet-name>
+    <url-pattern>/dashboard</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>AccountProfile</servlet-name>
+    <url-pattern>/profile</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>InfoPage</servlet-name>
+    <url-pattern>/info</url-pattern>
+  </servlet-mapping>
+      <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Dashboard</servlet-name>
+    <servlet-class>Dashboard</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+ <servlet>
+    <servlet-name>CookiesServlet</servlet-name>
+    <servlet-class>CookiesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginTwo</servlet-name>
+    <servlet-class>LoginTwo</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>LoginTwo</servlet-name>
+    <url-pattern>/logintwo</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>LoginTwo</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+ 
+  
+  
+    <servlet>
+    <servlet-name>LoginThree</servlet-name>
+    <servlet-class>LoginThree</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Driver</servlet-name>
+    <servlet-class>Driver</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>Driver</servlet-name>
+    <url-pattern>/driver</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>LoginThree</servlet-name>
+    <url-pattern>/loginthree</url-pattern>
+  </servlet-mapping>
+    
+      <servlet>
+    <servlet-name>LoginFour</servlet-name>
+    <servlet-class>LoginFour</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginDriver</servlet-name>
+    <servlet-class>LoginDriver</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>LoginDriver</servlet-name>
+    <url-pattern>/logindriver</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>LoginFour</servlet-name>
+    <url-pattern>/loginfour</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LoginFive</servlet-name>
+    <servlet-class>LoginFive</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DriverFive</servlet-name>
+    <servlet-class>DriverFive</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>DriverFive</servlet-name>
+    <url-pattern>/driverfive</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>LoginFive</servlet-name>
+    <url-pattern>/loginfive</url-pattern>
+  </servlet-mapping>
+
+    
+</web-app>
